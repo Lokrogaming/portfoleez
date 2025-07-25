@@ -252,7 +252,10 @@ button.adbtn {
   font-family: "Varela Round";
   margin-bottom: 20px; 
 }
-
+.btn-size-50px {
+  width: 85%;
+  
+}
 button.adbtn p {
   font-size: 150%;
 }
