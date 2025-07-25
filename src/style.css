@@ -110,7 +110,7 @@ body {
             display: block;
         }
         img.logo-lg{
-          width: 200px;
+          width: 150px;
           margin-top: 30%;
            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
         }
@@ -173,7 +173,7 @@ address {
 .avatar {
   width: 150px;     
       height: 150px;
-      border-radius: 10%;
+      border-radius: 50%;
       object-fit: cover;
       border: 3px solid transparent; 
     }
