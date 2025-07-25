@@ -153,6 +153,7 @@ address {
 }
 .button:hover {
         background-color: #f2f2f2;
+        color: black;
 }
 
 
@@ -233,6 +234,10 @@ a {
 }
 
 /*BUTTONS*/
+button.btn-fill {
+  background-color: currentColor;
+  
+}
 button.adbtn {
   width: 100%;
   background-color: darkslategrey;
