@@ -111,6 +111,7 @@ body {
         }
         img.logo-lg{
           width: 200px;
+          margin-top: 30%;
            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
         }
         div.suggested {
