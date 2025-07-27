@@ -65,6 +65,12 @@
     Hier austesten</span
   >
 </button>
+<h2 class="glow-white-dim">Du hast schon einen Code?</h2>
+<!-- From Uiverse.io by alexruix --> 
+<div class="input-group">
+    <input type="text" class="input" id="code" name="code" placeholder="ABCD45" autocomplete="off">
+    <input class="button--submit" value="Submit" type="submit" onclick="codeSubmit()">
+</div>
 
     <div id="options">
         <h1>Colors / Effects:</h1>
@@ -120,10 +126,30 @@
         </ul>
     </div>
 
+   <script>
+
+  function codeSubmit() {
+    let code = document.getElementById("code").value.trim();
+    if (code) {
+      window.location.href = "redirect.html?id=" + code;
+    }
+  }
+
+  // Enter-Taste im Eingabefeld abfangen
+  document.addEventListener("DOMContentLoaded", () => {
+    const input = document.getElementById("code");
+    input.addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        codeSubmit();
+      }
+    });
+  });
+</script>
+
    
 
    
       
-    </script>
+    
   </body>
 </html>

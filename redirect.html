@@ -49,7 +49,7 @@
     <img class="logo-lg avatar" src="src/img/logo-portfoleez.png">
     <h1 class="main-name-lg glow-rainbow">Portfoleez</h1>
     <h1 class="main-name-lg glow-green" style="color: white;">Bitte habe ein wenig Geduld, please be patient</h1>
-
+<div id="animation-loader" style="display: block;">
     <!-- From Uiverse.io by alexruix --> 
 <div class="loader">
   <div class="cell d-0"></div>
@@ -80,24 +80,31 @@
   </div>
   <div class="text">Loading your request...</div>
 </div>
+<h1 class="glow-red-dim"  style="display: none;">An error occured, please be patient and try again. You will be transferred to the lobby soon.</h1>
 
-<script>
-    
-    function openPortfolio() {
-        delay(12000)
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
-    const knownids = {
-        "EBR60HG" : "/portfolios/nebo.html",
-        "J7Z547V" : "https://lokrogaming.github.io"
-    };
-    if (id && knownids[id]) {
-        window.location.href = knownids[id];
+   <script>
+   function openPortfolio() {
+        setTimeout(() => {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+            const knownids = {
+                "EBR60HG" : "/portfolios/nebo.html",
+                "J7Z547V" : "https://lokrogaming.github.io"
+            };
+            if (id && knownids[id]) {
+                window.location.href = knownids[id];
+            } else {
+                document.getElementById("animation-loader").style.display = "none";
+                document.querySelector(".glow-red-dim").style.display = "block"; // Show the error message
+            }
+        }, 12000); // 12 Sekunden warten
     }
-}
 
-   
+   // Optional: direkt beim Laden starten
+   window.onload = openPortfolio;
+</script>
+
       
-    </script>
+    
   </body>
 </html>
