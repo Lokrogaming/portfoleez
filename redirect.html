@@ -80,7 +80,7 @@
   </div>
   <div class="text">Loading your request...</div>
 </div>
-<h1 class="glow-red-dim"  style="display: none;">An error occured, please be patient and try again. You will be transferred to the lobby soon.</h1>
+<h1 id="error" class="glow-red-dim"  style="display: none;">An error occured, please be patient and try again. You will be transferred to the lobby soon.</h1>
 
    <script>
    function openPortfolio() {
@@ -95,9 +95,11 @@
                 window.location.href = knownids[id];
             } else {
                 document.getElementById("animation-loader").style.display = "none";
-                document.querySelector(".glow-red-dim").style.display = "block"; // Show the error message
+                document.getElementById("error").style.display = "block";
+                setTimeout(2000);
+                window.location.href="index.html" // Show the error message
             }
-        }, 12000); // 12 Sekunden warten
+        }, 3000); // 12 Sekunden warten
     }
 
    // Optional: direkt beim Laden starten
