@@ -32,7 +32,7 @@ body {
         background-color: #23F9B2;
       }
       .bg-turquoise-gradient {
-        background-color: linear-gradient( to right, #23F9B2, white);
+        background: linear-gradient( to right, #23F9B2, white);
       }
 .topnav {
   position: fixed;
