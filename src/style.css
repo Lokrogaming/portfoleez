@@ -4,12 +4,14 @@
 }
 @font-face {
   font-family: "Bitcount Prop Double Light";
-  src: url("\fonts\BitcountPropDouble-Light.ttf") format("truetype");
+  src: url("https://lokrogaming.github.io/fonts/BitcountPropDouble-Light.ttf") format("truetype");
 }
 @font-face {
   font-family: "Varela Round";
   src: url("\fonts\VarelaRound-Regular.ttf") format("truetype");
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 html {
         scroll-behavior: smooth;
@@ -138,6 +140,13 @@ body {
          
            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
         }
+portfoleezpromotop {
+  color: white;
+  font-size: 1px;
+  top: 0em;
+  font-family: "Bitcount Prop Double Light";
+  align-self: center;
+}
         /* From Uiverse.io by jeremyssocial */ 
 @keyframes blinkCursor {
   50% {
@@ -217,6 +226,7 @@ body {
   float: left;
   line-height: 1.5em;
   color: #eee;
+  
 }
 
 .text {
@@ -229,8 +239,60 @@ body {
     blinkCursor 0.5s step-end infinite alternate;
   margin-top: 1.5em;
 }
+.TerminalName {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.2em solid green; /* Cursor */
+  margin-top: 1.5em;
+}
 
-    
+    /* From Uiverse.io by JaydipPrajapati1910 */ 
+.card {
+  width: 190px;
+  height: 254px;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #000, #272727);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
+.card_content {
+}
+.showcase {
+  color: white;
+  margin-left: 25%;
+}
 /* From Uiverse.io by alexruix */ 
 .loader {
   --cell-size: 52px;
@@ -325,6 +387,77 @@ body {
         div.suggested {
         font-size: 125%;
         }
+
+.showcase-card {
+  font-family: 'Inter', sans-serif;
+      position: relative; /* wichtig für Badge-Positionierung */
+      background: linear-gradient(135deg, #1e293b, #334155);
+      border-radius: 20px;
+      padding: 25px;
+      width: 50%;
+      color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .showcase-card:hover {
+      transform: scale(1.02);
+    }
+
+    .badge {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #facc15; /* Gelb für Aufmerksamkeit */
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .badge svg {
+      width: 20px;
+      height: 20px;
+      fill: #000;
+    }
+
+    .showcase-card h3 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .showcase-card p {
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .mini-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .mini-card {
+      background: #475569;
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+    }
+
+    .mini-card:hover {
+      background: #60a5fa;
+      transform: translateY(-2px);
+    }
         /* From Uiverse.io by cssbuttons-io */ 
 .cbx {
  position: relative;
