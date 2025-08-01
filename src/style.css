@@ -27,7 +27,13 @@ body {
         font-family: "Varela Round";
         font-style: normal;
       }
-      
+      /*   BACKGROUNDS AND COLORS   */ 
+      .bg-turquoise {
+        background-color: #23F9B2;
+      }
+      .bg-turquoise-gradient {
+        background-color: linear-gradient( to right, #23F9B2, white);
+      }
 .topnav {
   position: fixed;
   top: 0;
@@ -37,7 +43,7 @@ body {
   border: 2px solid black;
   padding: 10px;
   z-index: 999;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 1);
   font-family: "Bitcount Prop Double";
 
   display: flex;
