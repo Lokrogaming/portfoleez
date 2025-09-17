@@ -26,15 +26,9 @@ body {
         margin: 0;
         font-family: "Varela Round";
         font-style: normal;
+        height: 100%;
       }
-      /*   BACKGROUNDS AND COLORS   */ 
-      .bg-turquoise {
-        background-color: #23F9B2;
-      }
-      .bg-turquoise-gradient {
-        
-        background-image: linear-gradient( to right, #23F9B2, white);
-      }
+      
 .topnav {
   position: fixed;
   top: 0;
